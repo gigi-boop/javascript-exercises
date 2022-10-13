@@ -13,12 +13,10 @@ const sumAll = function (...args) {
         return a - b;
     });
 
-    let range = args[0];
-    let result = args[0];
+    let result = 0;
 
-    for (let i = args[0]; i < args[1]; i++) {
-        range += 1;
-        result += range;
+    for (let i = args[0]; i <= args[1]; i++) {
+        result += i;
     }
 
     return result;
